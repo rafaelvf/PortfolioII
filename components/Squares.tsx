@@ -9,6 +9,16 @@ export default function Squares() {
       <div className={styles.work}></div>
       <div className={styles.technologies}></div>
       <div className={styles.contact}></div>
+      <div className={styles.work2}></div>
+      <div className={styles.technologies}></div>
+      <div className={styles.contact}></div>
+      <div className={styles.work2}></div>
+      <div className={styles.technologies2}>
+        <div className={styles.eye}></div>
+        <div className={styles.mouth}>
+          <div className={styles.tongue}></div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -4,20 +4,70 @@
   align-items: center;
   height: 100vh;
 
-  max-width: 600px;
+  animation-name: snake;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes snake {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 .work {
-  width: 350px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--green);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.work2 {
+  width: 200px;
   height: 200px;
   background-color: var(--green);
 }
 .technologies {
-  width: 350px;
+  width: 200px;
   height: 200px;
   background-color: var(--lightblue);
 }
+.technologies2 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--lightblue);
+  position: relative;
+  .eye {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 5%;
+    right: 5%;
+  }
+  .mouth {
+    background-color: var(--red);
+    position: absolute;
+    right: 0;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    border-top-left-radius: 25%;
+
+    .tongue {
+      background-color: black;
+      position: absolute;
+      right: -30%;
+      top: 40%;
+      height: 5px;
+      width: 30px;
+    }
+  }
+}
 .contact {
-  width: 350px;
+  width: 200px;
   height: 200px;
   background-color: var(--yellow);
 }
