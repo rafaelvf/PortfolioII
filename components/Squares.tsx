@@ -14,7 +14,7 @@ export default function Squares() {
       <div className={styles.contact}></div>
       <div className={styles.work2}></div>
       <div className={styles.technologies2}>
-        <div className={styles.thougth}>Hire me!!!</div>
+        <div className={styles.thougth}>Batoul owes me $$!!!</div>
         <div className={styles.eye}></div>
         <div className={styles.mouth}>
           <div className={styles.tongue}></div>
