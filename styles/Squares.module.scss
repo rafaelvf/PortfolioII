@@ -5,8 +5,9 @@
   height: 100vh;
 
   animation-name: snake;
-  animation-duration: 9s;
+  animation-duration: 19s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
 @keyframes snake {
   from {
@@ -64,6 +65,19 @@
       height: 5px;
       width: 30px;
     }
+  }
+  .thougth {
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    font-size: 3.5rem;
+    top: -100%;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 99%;
   }
 }
 .contact {
