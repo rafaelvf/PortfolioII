@@ -3,10 +3,17 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/Basketball.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Basketball() {
   const constraintsRef = useRef(null);
   const [goal, setGoal] = useState(false);
+  const router = useRouter();
+
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    router.push("/work");
+  };
 
   function handleDragEnd(event: any, info: any) {
     let hooppos = document.getElementById("hoop")?.getBoundingClientRect();
@@ -29,13 +36,10 @@ export default function Basketball() {
     ) {
       console.log("hola");
       setGoal(true);
+      handleClick(event);
     } else setGoal(false);
   }
-  //   React.useEffect(() => {
-  //     if (goal) {
-  //       <Link href="/work" />;
-  //     }
-  //   }, [goal]);
+
   console.log(goal, "goal");
   return (
     <div>
