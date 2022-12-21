@@ -9,8 +9,11 @@
   height: 60px;
   background-color: var(--red);
   border-radius: 50%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
+  cursor: pointer;
 }
 .hoop {
   position: absolute;
@@ -22,4 +25,10 @@
   transform: translate(-50%, 0);
   cursor: pointer;
   z-index: 1;
+}
+.position {
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 40%;
 }
