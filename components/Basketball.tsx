@@ -10,9 +10,9 @@ export default function Basketball() {
   const [goal, setGoal] = useState(false);
   const router = useRouter();
 
-  const handleClick = (e: any) => {
+  const handleClick = (e: any, route: string) => {
     e.preventDefault();
-    router.push("/work");
+    router.push(`/${route}`);
   };
 
   function handleDragEnd(event: any, info: any) {
@@ -33,7 +33,28 @@ export default function Basketball() {
       info.point.y < bottom
     ) {
       setGoal(true);
-      handleClick(event);
+      handleClick(event, "work");
+    } else setGoal(false);
+  }
+  function handleDragEnd2(event: any, info: any) {
+    let hooppos = document.getElementById("hoop")?.getBoundingClientRect();
+    let top = hooppos?.top;
+    let left = hooppos?.left;
+    let right = hooppos?.right;
+    let bottom = hooppos?.bottom;
+
+    if (
+      //@ts-ignore
+      info.point.x > left &&
+      //@ts-ignore
+      info.point.x < right &&
+      //@ts-ignore
+      info.point.y > top &&
+      //@ts-ignore
+      info.point.y < bottom
+    ) {
+      setGoal(true);
+      handleClick(event, "skills");
     } else setGoal(false);
   }
 
@@ -54,6 +75,19 @@ export default function Basketball() {
             whileDrag={{ scale: 1.2 }}
           >
             Work
+          </motion.div>
+        </div>
+        <div className={styles.position2}>
+          <motion.div
+            id="ball2"
+            drag
+            dragConstraints={constraintsRef}
+            onDragEnd={handleDragEnd2}
+            className={styles.ball2}
+            dragSnapToOrigin={false}
+            whileDrag={{ scale: 1.2 }}
+          >
+            Skills
           </motion.div>
         </div>
       </motion.div>
