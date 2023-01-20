@@ -20,7 +20,9 @@ export default function Wave() {
       document.documentElement.clientHeight;
 
     const scrollLen = Math.ceil((scrollpx / winHeightPx) * 8);
-    setScrolled(scrollLen);
+    if (scrollLen > 8) {
+      setScrolled(8);
+    } else setScrolled(scrollLen);
     console.log(scrollpx, "px");
     console.log(winHeightPx, "win");
   };
