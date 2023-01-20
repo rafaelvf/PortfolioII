@@ -19,9 +19,13 @@ export default function Wave() {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
 
-    const scrollLen = Math.ceil(((scrollpx / winHeightPx) * 100) / 0.69);
+    const scrollLen = Math.ceil((scrollpx / winHeightPx) * 8);
     setScrolled(scrollLen);
+    console.log(scrollpx, "px");
+    console.log(winHeightPx, "win");
   };
+  console.log(scrolled, "scrolled");
+
   //   useEffect(() => {
   //     const videoContainer = document.querySelector(".containerVideo");
   //     const videoTag = document.querySelector(".video");
