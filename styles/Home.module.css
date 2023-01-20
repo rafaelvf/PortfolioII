@@ -2,3 +2,14 @@
   background-color: var(--darkblue);
   min-height: 100vh;
 }
+.buttonReal {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
