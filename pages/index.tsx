@@ -7,6 +7,9 @@ import Basketball from "../components/Basketball";
 import Wave from "../components/Wave";
 import WaveReal from "../components/WaveReal";
 import { use, useState } from "react";
+import Birds from "../components/Birds";
+import MusicPlayer from "../components/MusicPlayer";
+import Projects from "../components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,13 +26,19 @@ export default function Home() {
       <main className={styles.main}>
         {/* <Squares /> */}
         {/* <Basketball /> */}
-        <div
+        {/* <div
           onClick={() => setRealLife(!realLife)}
           className={styles.buttonReal}
         >
           {realLife ? "Press for animated wave" : " Press for Real Life wave"}
         </div>
-        {realLife ? <WaveReal /> : <Wave />}
+        {realLife ? <WaveReal /> : <Wave />} */}
+        <div className={styles.heroContainer}>
+          <Birds />
+          <div className={styles.title}>FIXES</div>
+          <MusicPlayer />
+        </div>
+        <Projects />
       </main>
     </>
   );
