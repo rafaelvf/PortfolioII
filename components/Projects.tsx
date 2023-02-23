@@ -59,6 +59,18 @@ export default function Projects() {
       "<.1"
     );
     snap.fromTo(
+      ".mockup2",
+      {
+        x: "100%",
+        opacity: 0,
+      },
+      {
+        x: "0%",
+        opacity: 1,
+      },
+      "<"
+    );
+    snap.fromTo(
       ".projectPosition",
       {
         opacity: 0,
@@ -68,6 +80,7 @@ export default function Projects() {
       },
       "<.1"
     );
+
     snap.fromTo(
       ".projectDescription",
       {
@@ -99,6 +112,7 @@ export default function Projects() {
         </div>
         <div className={styles.projectImages}>
           <img src="/mockup.png" className={`${styles.mockup} mockup`} />
+          <img src="/mockup.png" className={`${styles.mockup2} mockup2`} />
         </div>
       </div>
     </div>
