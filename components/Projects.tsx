@@ -3,6 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import styles from "../styles/Projects.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +14,7 @@ export default function Projects() {
         trigger: ".container",
         start: "-10% center",
         end: "bottom bottom",
-        markers: true,
+        //markers: true,
         scrub: true,
       },
     });
@@ -160,7 +161,7 @@ export default function Projects() {
       ".mockup3",
       {
         opacity: 0,
-        y: "200%",
+        y: "250%",
       },
       {
         opacity: 1,
@@ -299,10 +300,12 @@ export default function Projects() {
           <img src="/mockup.png" className={`${styles.mockup2} mockup33`} />
         </div>
       </div>
-      <button className={`${styles.seeAll} seeAll`}>
-        <span>Click!</span>
-        <span>See all projects</span>
-      </button>
+      <Link href="/projects">
+        <button className={`${styles.seeAll} seeAll`}>
+          <span>Click!</span>
+          <span>See all projects</span>
+        </button>
+      </Link>
     </div>
   );
 }

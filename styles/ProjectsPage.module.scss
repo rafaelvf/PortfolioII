@@ -1,0 +1,15 @@
+.title {
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.filterContainer {
+  display: flex;
+  justify-content: center;
+}
+.filter {
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+}
