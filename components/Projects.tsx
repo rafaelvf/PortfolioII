@@ -231,7 +231,7 @@ export default function Projects() {
         scale: 1,
         opacity: 1,
       },
-      "<.5"
+      "<.2"
     );
   }, []);
   return (
