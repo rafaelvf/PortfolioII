@@ -1,3 +1,4 @@
+import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/ProjectsPage.module.scss";
 
 export default function ProjectsPage() {
@@ -21,6 +22,9 @@ export default function ProjectsPage() {
           <div className={styles.filterInner4}></div>
           <a href="#">Freelance</a>
         </div>
+      </div>
+      <div className={styles.cardContainer}>
+        <ProjectCard />
       </div>
     </div>
   );

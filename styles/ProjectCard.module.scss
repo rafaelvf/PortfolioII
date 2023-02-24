@@ -1,0 +1,51 @@
+.container {
+  width: 350px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.container:hover {
+  transform: translateY(-15px);
+  .title {
+    color: #150879;
+  }
+}
+.icon {
+  background-image: url("/github-svgrepo-com.svg");
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.icon:hover {
+  background-image: url("/github-color-svgrepo-com.svg");
+}
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.stackContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(39, 112, 175);
+  margin-bottom: 10px;
+}
+.tag {
+  background-color: #e8c547;
+  padding: 3px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 500;
+}
