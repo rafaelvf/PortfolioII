@@ -1,26 +1,42 @@
 .container {
   width: 350px;
   height: 300px;
-  border: 1px solid black;
-  border-radius: 2px;
+  border: 2px solid black;
+  border-radius: 3px;
   padding: 8px;
   transition: all 0.5s;
   cursor: pointer;
 }
 .container:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
   .title {
     color: #150879;
   }
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-bottom: 16px;
+  justify-content: flex-end;
+}
+.icon2 {
+  width: 30px;
+  height: 30px;
+}
+.icon2:hover {
+  filter: invert(82%) sepia(95%) saturate(3520%) hue-rotate(320deg)
+    brightness(96%) contrast(91%);
+  width: 31px;
+  height: 31px;
 }
 .icon {
   background-image: url("/github-svgrepo-com.svg");
   width: 30px;
   height: 30px;
   background-size: cover;
-  display: flex;
-  margin-left: auto;
-  margin-bottom: 16px;
+  position: relative;
 }
 .icon:hover {
   background-image: url("/github-color-svgrepo-com.svg");
@@ -31,7 +47,7 @@
   margin-bottom: 16px;
 }
 .text {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   margin-bottom: 16px;
 }
@@ -43,9 +59,17 @@
   margin-bottom: 10px;
 }
 .tag {
-  background-color: #e8c547;
   padding: 3px 6px;
   border-radius: 5px;
   display: inline-block;
   font-weight: 500;
+  &Freelance {
+    background: rgb(253, 236, 200);
+  }
+  &Side {
+    background-color: rgb(219, 237, 219);
+  }
+  &LLF {
+    background: rgb(255, 226, 221);
+  }
 }

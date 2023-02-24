@@ -1,21 +1,60 @@
 import styles from "../styles/ProjectCard.module.scss";
 
-export default function ProjectCard() {
+type Props = {
+  website: string;
+  github?: string;
+  title: string;
+  text: string;
+  stack: [];
+  tag: string;
+};
+
+export default function ProjectCard({
+  website,
+  github,
+  title,
+  text,
+  stack,
+  tag,
+}: Props) {
+  console.log(github);
   return (
     <div className={styles.container}>
       <div className={styles.iconContainer}>
-        <div className={styles.icon}></div>
+        <a href={website} target="_blank" rel="noopener noreferrerz">
+          <img
+            src="/link_FILL0_wght400_GRAD0_opsz48.svg"
+            className={styles.icon2}
+          />
+        </a>
+        {github !== undefined && (
+          <a href={github} target="_blank" rel="noopener noreferrerz">
+            <div className={styles.icon}></div>
+          </a>
+        )}
       </div>
-      <div className={styles.title}>GQ Magazine</div>
-      <div className={styles.text}>
-        Lorem ipsum loe asud enald daie daler adfa qe aldf uq e r adaf d adfadf
-        Lorem ipsum loe asud enald daie daler adfa qe aldf uq e r adaf d adfadf{" "}
-      </div>
+      <a href={website} target="_blank" rel="noopener noreferrerz">
+        <div className={styles.title}>{title}</div>
+      </a>
+      <div className={styles.text}>{text}</div>
       <div className={styles.stackContainer}>
-        <div className={styles.stack}>React</div>
-        <div className={styles.stack}>Mongodb</div>
+        {stack.map((i: any, key: any) => (
+          <div className={styles.stack} key={key}>
+            {i}
+          </div>
+        ))}
       </div>
-      <div className={styles.tag}>Freelance</div>
+      <div
+        className={
+          tag === "Freelance"
+            ? `${styles.tag} ${styles.tagFreelance}`
+            : tag === "Side project"
+            ? `${styles.tag} ${styles.tagSide}`
+            : `${styles.tag} ${styles.tagLLF}`
+        }
+      >
+        {tag}
+      </div>
     </div>
   );
 }

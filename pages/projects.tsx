@@ -1,6 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/ProjectsPage.module.scss";
-
+import { projectsInfo } from "../data";
 export default function ProjectsPage() {
   return (
     <div className={styles.container}>
@@ -12,7 +12,7 @@ export default function ProjectsPage() {
         </div>
         <div className={styles.filter}>
           <div className={styles.filterInner2}></div>
-          <a href="#">Work Projects</a>
+          <a href="#">Long Lost Friends</a>
         </div>
         <div className={styles.filter}>
           <div className={styles.filterInner3}></div>
@@ -24,7 +24,16 @@ export default function ProjectsPage() {
         </div>
       </div>
       <div className={styles.cardContainer}>
-        <ProjectCard />
+        {projectsInfo.map((i: any, key: any) => (
+          <ProjectCard
+            website={i.website}
+            title={i.title}
+            text={i.text}
+            stack={i.stack}
+            tag={i.tag}
+            key={key}
+          />
+        ))}
       </div>
     </div>
   );
