@@ -10,6 +10,7 @@ import { use, useState } from "react";
 import Birds from "../components/Birds";
 import MusicPlayer from "../components/MusicPlayer";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function Home() {
           <MusicPlayer />
         </div>
         <Projects />
+        <Skills />
       </main>
     </>
   );
