@@ -4,8 +4,8 @@
   justify-content: center;
 }
 .window {
-  width: 880px;
-  height: 560px;
+  width: 800px;
+  height: 350px;
   border-radius: 10px;
   background: white;
   overflow: hidden;
@@ -88,4 +88,13 @@
 }
 .selected {
   background: #eee;
+}
+.logoContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.logos {
+  width: 100px;
+  height: 100px;
 }

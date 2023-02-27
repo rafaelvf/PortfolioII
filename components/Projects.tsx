@@ -14,7 +14,7 @@ export default function Projects() {
         trigger: ".container",
         start: "-10% center",
         end: "bottom bottom",
-        markers: true,
+        //markers: true,
         scrub: true,
       },
     });
