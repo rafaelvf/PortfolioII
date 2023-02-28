@@ -17,7 +17,7 @@ export default function ProjectCard({
   stack,
   tag,
 }: Props) {
-  console.log(github);
+  console.log(github, "github");
   return (
     <div className={styles.container}>
       <div className={styles.iconContainer}>
@@ -27,7 +27,7 @@ export default function ProjectCard({
             className={styles.icon2}
           />
         </a>
-        {github !== undefined && (
+        {github !== "" && (
           <a href={github} target="_blank" rel="noopener noreferrerz">
             <div className={styles.icon}></div>
           </a>

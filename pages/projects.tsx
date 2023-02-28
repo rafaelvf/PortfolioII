@@ -42,6 +42,7 @@ export default function ProjectsPage() {
         {filteredArray.map((i: any, key: any) => (
           <ProjectCard
             website={i.website}
+            github={i.github}
             title={i.title}
             text={i.text}
             stack={i.stack}
