@@ -25,6 +25,14 @@ export default function Contact() {
           <img src="/linkedin-svgrepo-com.svg" className={styles.logos} />
           <div className={styles.text}>rafael-viteri</div>
         </div>
+        <div className={styles.infoContainer}>
+          <img src="/github-svgrepo-com.svg" className={styles.logos} />
+          <div className={styles.text}>rafaelvf</div>
+        </div>
+        <div className={styles.infoContainer}>
+          <img src="/twitter-color-svgrepo-com.svg" className={styles.logos} />
+          <div className={styles.text}>fixes_v</div>
+        </div>
       </div>
     </div>
   );
