@@ -22,7 +22,30 @@
   overflow: hidden;
   background: #fff;
 }
-
+.filterList {
+  border: 1px solid #eaeaea;
+  background: #fff;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.iconContainer {
+  width: 40px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &True {
+    background-color: #eaeaea;
+    border-radius: 3px;
+  }
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
 .filter a {
   position: relative;
   transition: all 0.35s ease-Out;
