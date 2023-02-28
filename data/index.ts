@@ -72,6 +72,14 @@ export const projectsInfo = [
     tag: "Long Lost Friends",
   },
   {
+    website: "https://jolly-booth-281355.netlify.app/",
+    github: "https://github.com/christopherBryan1996/PF",
+    title: "ClanFest",
+    text: "ClanFest is a web app that lets users create, organize, and find events. With features like event creation, task assignments, and location-based search, ClanFest simplifies the event planning process. It also offers integrated payment options via Mercado Pago for event confirmation and ticket purchases.  ",
+    stack: ["React", "Typescript", "Redux", "MongoDB"],
+    tag: "Side project",
+  },
+  {
     website: "https://www.flycloudniners.com/",
     github: "",
     title: "Flycloudniners",

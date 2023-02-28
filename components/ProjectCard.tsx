@@ -34,7 +34,17 @@ export default function ProjectCard({
         )}
       </div>
       <a href={website} target="_blank" rel="noopener noreferrerz">
-        <div className={styles.title}>{title}</div>
+        <div
+          className={
+            tag === "Freelance"
+              ? `${styles.title} ${styles.titleFreelance}`
+              : tag === "Side project"
+              ? `${styles.title} ${styles.titleSide}`
+              : `${styles.title} ${styles.titleLLF}`
+          }
+        >
+          {title}
+        </div>
       </a>
       <div className={styles.text}>{text}</div>
       <div className={styles.stackContainer}>

@@ -1,16 +1,26 @@
 .container {
   width: 350px;
   height: 300px;
-  border: 2px solid black;
-  border-radius: 3px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
   padding: 8px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
   transition: all 0.5s;
   cursor: pointer;
 }
 .container:hover {
   transform: translateY(-10px);
   .title {
-    color: #150879;
+    &Freelance {
+      color: rgb(251, 211, 124);
+    }
+    &Side {
+      color: rgb(158, 219, 158);
+    }
+    &LLF {
+      color: rgb(252, 164, 149);
+    }
   }
 }
 .iconContainer {
@@ -18,7 +28,7 @@
   align-items: center;
   gap: 10px;
   margin-left: auto;
-  margin-bottom: 16px;
+  margin-bottom: 2px;
   justify-content: flex-end;
 }
 .icon2 {
