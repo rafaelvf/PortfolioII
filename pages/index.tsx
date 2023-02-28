@@ -11,6 +11,7 @@ import Birds from "../components/Birds";
 import MusicPlayer from "../components/MusicPlayer";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function Home() {
         </div>
         <Projects />
         <Skills />
+        <Contact />
       </main>
     </>
   );

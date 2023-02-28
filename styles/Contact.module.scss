@@ -1,0 +1,65 @@
+.container {
+  margin: 8rem 0 4rem;
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.title {
+  font-size: 70px;
+  display: flex;
+}
+.ddown {
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.6s;
+  &Open {
+    transform: rotateX(180deg);
+    transition: all 0.6s;
+  }
+}
+// .infoContainer {
+//   opacity: 0;
+//   width: 300px;
+//   height: 60px;
+//   //border: 1px solid black;
+//   display: flex;
+//   align-items: center;
+//   margin: 2rem auto;
+//   padding-left: 15px;
+//   border-radius: 10px;
+//   gap: 1.5rem;
+//   cursor: pointer;
+//   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+//     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+//     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+//   transition: all 1s;
+
+//   &Open {
+//     opacity: 1;
+//     transition: all 1s;
+//   }
+// }
+.nav {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0px;
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  transition: all 0.5s;
+  border: 1px solid red;
+  flex-direction: column;
+
+  &Open {
+    max-height: 600px;
+    transition: all 1s;
+    border: 1px solid red;
+  }
+}
+.logos {
+  width: 30px;
+}
