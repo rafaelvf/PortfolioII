@@ -1,5 +1,6 @@
 .container {
   background-color: #fafafa;
+  min-height: 100vh;
 }
 
 .title {
@@ -11,9 +12,12 @@
 .filterContainer {
   display: flex;
   justify-content: center;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
 }
 .filter {
-  border: 1px solid black;
   border: 1px solid #eaeaea;
   border-radius: 1px;
   padding: 10px 20px;
@@ -21,6 +25,12 @@
   position: relative;
   overflow: hidden;
   background: #fff;
+  @media (max-width: 630px) {
+    padding: 10px 8px;
+  }
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
 }
 .filterList {
   border: 1px solid #eaeaea;
@@ -29,6 +39,13 @@
   display: flex;
   align-items: center;
   padding: 0 5px;
+  @media (max-width: 520px) {
+    margin-left: 1rem;
+  }
+  @media (max-width: 485px) {
+    margin-top: 1rem;
+    height: 40px;
+  }
 }
 .iconContainer {
   width: 40px;
@@ -111,15 +128,17 @@
   justify-content: center;
 
   margin-top: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 3rem;
   gap: 1rem;
 }
 .cardContainerList {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-top: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 3rem;
   gap: 1rem;
+  @media (max-width: 800px) {
+    padding: 0 1rem 3rem;
+  }
 }
