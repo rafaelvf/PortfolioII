@@ -66,7 +66,7 @@ export default function ProjectsPage() {
           </div>
         </div>
       </div>
-      <div className={styles.cardContainer}>
+      <div className={grid ? styles.cardContainer : styles.cardContainerList}>
         {filteredArray.map((i: any, key: any) => (
           <ProjectCard
             website={i.website}
@@ -75,6 +75,7 @@ export default function ProjectsPage() {
             text={i.text}
             stack={i.stack}
             tag={i.tag}
+            grid={grid}
             key={key}
           />
         ))}

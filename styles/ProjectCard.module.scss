@@ -8,6 +8,20 @@
   box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
   transition: all 0.5s;
 }
+.containerList {
+  width: 850px;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
+  transition: all 0.5s;
+  display: flex;
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+}
 .container:hover {
   transform: translateY(-10px);
   .title {
@@ -60,6 +74,9 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 16px;
+}
+.textList {
+  display: none;
 }
 .stackContainer {
   display: flex;

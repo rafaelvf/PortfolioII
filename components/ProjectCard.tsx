@@ -7,6 +7,7 @@ type Props = {
   text: string;
   stack: [];
   tag: string;
+  grid: boolean;
 };
 
 export default function ProjectCard({
@@ -16,10 +17,10 @@ export default function ProjectCard({
   text,
   stack,
   tag,
+  grid,
 }: Props) {
-  console.log(github, "github");
   return (
-    <div className={styles.container}>
+    <div className={grid ? styles.container : styles.containerList}>
       <div className={styles.iconContainer}>
         <a href={website} target="_blank" rel="noopener noreferrerz">
           <img
@@ -46,7 +47,7 @@ export default function ProjectCard({
           {title}
         </div>
       </a>
-      <div className={styles.text}>{text}</div>
+      <div className={grid ? styles.text : styles.textList}>{text}</div>
       <div className={styles.stackContainer}>
         {stack.map((i: any, key: any) => (
           <div className={styles.stack} key={key}>
