@@ -2,6 +2,8 @@ import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/ProjectsPage.module.scss";
 import { projectsInfo } from "../data";
 import { useState } from "react";
+import Nav from "../components/Nav";
+import Link from "next/link";
 export default function ProjectsPage() {
   const [filter, setFilter] = useState("All");
   const [grid, setGrid] = useState(true);
@@ -13,6 +15,9 @@ export default function ProjectsPage() {
 
   return (
     <div className={styles.container}>
+      <Link href="/">
+        <Nav />
+      </Link>
       <div className={styles.title}>Projects</div>
       <div className={styles.filterContainer}>
         <div className={styles.filter} onClick={() => setFilter("All")}>

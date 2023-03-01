@@ -35,6 +35,7 @@ export default function Home() {
           {realLife ? "Press for animated wave" : " Press for Real Life wave"}
         </div>
         {realLife ? <WaveReal /> : <Wave />} */}
+
         <div className={styles.heroContainer}>
           <Birds />
           <div className={styles.title}>FIXES</div>
