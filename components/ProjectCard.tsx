@@ -21,7 +21,7 @@ export default function ProjectCard({
 }: Props) {
   return (
     <div className={grid ? styles.container : styles.containerList}>
-      <div className={styles.iconContainer}>
+      <div className={grid ? styles.iconContainer : styles.iconContainerList}>
         <a href={website} target="_blank" rel="noopener noreferrerz">
           <img
             src="/link_FILL0_wght400_GRAD0_opsz48.svg"
@@ -37,18 +37,24 @@ export default function ProjectCard({
       <a href={website} target="_blank" rel="noopener noreferrerz">
         <div
           className={
-            tag === "Freelance"
-              ? `${styles.title} ${styles.titleFreelance}`
+            grid
+              ? tag === "Freelance"
+                ? `${styles.title} ${styles.titleFreelance}`
+                : tag === "Side project"
+                ? `${styles.title} ${styles.titleSide}`
+                : `${styles.title} ${styles.titleLLF}`
+              : tag === "Freelance"
+              ? `${styles.titleList} ${styles.titleListFreelance}`
               : tag === "Side project"
-              ? `${styles.title} ${styles.titleSide}`
-              : `${styles.title} ${styles.titleLLF}`
+              ? `${styles.titleList} ${styles.titleListSide}`
+              : `${styles.titleList} ${styles.titleListLLF}`
           }
         >
           {title}
         </div>
       </a>
       <div className={grid ? styles.text : styles.textList}>{text}</div>
-      <div className={styles.stackContainer}>
+      <div className={grid ? styles.stackContainer : styles.stackContainerList}>
         {stack.map((i: any, key: any) => (
           <div className={styles.stack} key={key}>
             {i}
@@ -57,11 +63,17 @@ export default function ProjectCard({
       </div>
       <div
         className={
-          tag === "Freelance"
-            ? `${styles.tag} ${styles.tagFreelance}`
+          grid
+            ? tag === "Freelance"
+              ? `${styles.tag} ${styles.tagFreelance}`
+              : tag === "Side project"
+              ? `${styles.tag} ${styles.tagSide}`
+              : `${styles.tag} ${styles.tagLLF}`
+            : tag === "Freelance"
+            ? `${styles.tagList} ${styles.tagListFreelance}`
             : tag === "Side project"
-            ? `${styles.tag} ${styles.tagSide}`
-            : `${styles.tag} ${styles.tagLLF}`
+            ? `${styles.tagList} ${styles.tagListSide}`
+            : `${styles.tagList} ${styles.tagListLLF}`
         }
       >
         {tag}

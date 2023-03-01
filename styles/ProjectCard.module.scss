@@ -10,7 +10,7 @@
 }
 .containerList {
   width: 850px;
-  height: 120px;
+  height: 72px;
   background: #fff;
   border: 1px solid #eaeaea;
   border-radius: 8px;
@@ -36,6 +36,20 @@
     }
   }
 }
+.containerList:hover {
+  transform: translateY(-6px);
+  .titleList {
+    &Freelance {
+      color: rgb(251, 211, 124);
+    }
+    &Side {
+      color: rgb(158, 219, 158);
+    }
+    &LLF {
+      color: rgb(252, 164, 149);
+    }
+  }
+}
 .iconContainer {
   display: flex;
   align-items: center;
@@ -43,6 +57,15 @@
   margin-left: auto;
   margin-bottom: 2px;
   justify-content: flex-end;
+}
+.iconContainerList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-bottom: 2px;
+  justify-content: flex-end;
+  order: 4;
 }
 .icon2 {
   width: 30px;
@@ -70,6 +93,18 @@
   margin-bottom: 16px;
   cursor: pointer;
 }
+.titleList {
+  font-size: 23px;
+  font-weight: 700;
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 250px;
+  align-items: center;
+}
 .text {
   font-size: 16px;
   font-weight: 400;
@@ -85,10 +120,38 @@
   color: rgb(39, 112, 175);
   margin-bottom: 10px;
 }
+.stackContainerList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(39, 112, 175);
+  order: 3;
+  margin-left: 14px;
+}
 .tag {
   padding: 3px 6px;
   border-radius: 5px;
   display: inline-block;
+  font-weight: 500;
+  &Freelance {
+    background: rgb(253, 236, 200);
+  }
+  &Side {
+    background-color: rgb(219, 237, 219);
+  }
+  &LLF {
+    background: rgb(255, 226, 221);
+  }
+}
+.tagList {
+  padding: 3px 6px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  width: 132px;
+  align-items: center;
   font-weight: 500;
   &Freelance {
     background: rgb(253, 236, 200);
