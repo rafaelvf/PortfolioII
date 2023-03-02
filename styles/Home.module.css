@@ -1,8 +1,10 @@
 .main {
   background-color: var(--darkblue);
-  background-color: white;
+  background-color: #fafafa;
   /* min-height: 100vh; */
   position: relative;
+  height: 100%;
+  padding-bottom: 1rem;
 }
 .heroContainer {
   height: 100vh;
@@ -24,5 +26,5 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 200px;
 }

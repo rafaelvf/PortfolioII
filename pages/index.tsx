@@ -39,7 +39,7 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <Birds />
           <div className={styles.title}>FIXES</div>
-          <MusicPlayer />
+          {/* <MusicPlayer /> */}
         </div>
         <Projects />
         <Skills />

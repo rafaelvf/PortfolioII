@@ -3,6 +3,9 @@
   height: 330vh; //este tengo que cambiarlo dependiendo el widht
   width: 100%;
   //border: 1px solid red;
+  @media (max-width: 1600px) {
+    height: 360vh;
+  }
 }
 .title {
   font-size: 90px;
@@ -57,7 +60,13 @@
   left: 0;
 }
 .mockup2 {
-  width: 400px;
+  width: 800px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.mockup22 {
+  width: 350px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -137,4 +146,7 @@
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
+}
+.space {
+  height: 1rem;
 }
