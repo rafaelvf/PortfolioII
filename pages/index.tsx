@@ -47,7 +47,7 @@ export default function Home() {
             loop
             className={styles.title}
           >
-            <source src="/FIXESS.mp4" type="video/mp4" />
+            <source src="/video2.mp4" type="video/mp4" />
           </video>
           <div className={styles.text}>
             I'm a developer who loves to create good user experiences.

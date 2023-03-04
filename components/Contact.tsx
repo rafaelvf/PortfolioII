@@ -21,7 +21,7 @@ export default function Contact() {
           trigger: ".container2",
           start: "top 80%",
           end: "bottom bottom",
-          markers: true,
+          //markers: true,
           scrub: true,
         },
       }
