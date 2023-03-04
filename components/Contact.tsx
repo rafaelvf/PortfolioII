@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/Contact.module.scss";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Contact() {
   const [click, setClick] = useState(false);

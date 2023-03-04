@@ -38,7 +38,24 @@ export default function Home() {
 
         <div className={styles.heroContainer}>
           <Birds />
-          <div className={styles.title}>FIXES</div>
+
+          <video
+            muted
+            playsInline
+            autoPlay
+            preload="auto"
+            loop
+            className={styles.title}
+          >
+            <source src="/FIXESS.mp4" type="video/mp4" />
+          </video>
+          <div className={styles.text}>
+            I'm a developer who loves to create good user experiences.
+            <br /> My goal is to build innovative digital products that have a
+            positive impact on society.{" "}
+          </div>
+
+          {/* <div className={styles.title}>FIXES</div> */}
           {/* <MusicPlayer /> */}
         </div>
         <Projects />

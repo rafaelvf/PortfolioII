@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .container {
   position: relative;
   height: 330vh; //este tengo que cambiarlo dependiendo el widht
@@ -8,13 +10,13 @@
   }
 }
 .title {
-  font-size: 90px;
-  //position: absolute;
-  //left: 50%;
-  //transform: translateX(-50%);
-  //   margin-left: 3rem;
-  //   display: flex;
-  //   justify-content: center;
+  font-size: 150px;
+  font-family: "Montserrat";
+  position: relative;
+  //margin: 0 0 6rem;
+  text-transform: uppercase;
+  color: rgb(238, 238, 238);
+  font-weight: 600;
 }
 .projectContainer {
   display: flex;
@@ -96,8 +98,8 @@
   background: rgb(0, 172, 238);
   background: linear-gradient(
     0deg,
-    rgb(164, 164, 164) 0%,
-    rgb(133, 133, 134) 100%
+    rgb(215, 214, 214) 0%,
+    rgb(216, 216, 216) 100%
   );
   display: block;
   position: absolute;

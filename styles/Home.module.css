@@ -28,3 +28,116 @@
   transform: translate(-50%, -50%);
   font-size: 200px;
 }
+.text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  width: 360px;
+}
+/* .videoContainer {
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 800px;
+  height: 200px;
+} */
+/* .title {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  transition: transform 200ms ease-in-out;
+}
+.videoContainer > div {
+  z-index: 10;
+  position: absolute;
+  /* outline: 5px solid lime; 
+}
+/* .videoContainer > div:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  inset: 0;
+}
+.videoContainer > div:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  inset: 0;
+}
+.videoContainer > div:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  inset: 0;
+}
+.videoContainer > div:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  inset: 0;
+}
+.videoContainer > div:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  inset: 0;
+}
+.videoContainer > div:nth-child(6) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  inset: 0;
+}
+.videoContainer > div:nth-child(7) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  inset: 0;
+}
+.videoContainer > div:nth-child(8) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  inset: 0;
+}
+.videoContainer > div:nth-child(9) {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  inset: 0;
+}
+.videoContainer > div:nth-child(1):hover ~ .title {
+  transform: rotateX(25deg);
+  transform: rotateY(-25deg);
+}
+.videoContainer > div:nth-child(2):hover ~ .title {
+  transform: rotateX(0deg);
+  transform: rotateY(25deg);
+}
+
+.videoContainer > div:nth-child(3):hover ~ .title {
+  transform: rotateX(25deg);
+  transform: rotateY(25deg);
+}
+
+.videoContainer > div:nth-child(4):hover ~ .title {
+  transform: rotateX(-25deg);
+  transform: rotateY(0deg);
+}
+
+.videoContainer > div:nth-child(5):hover ~ .title {
+  transform: rotateX(0deg);
+  transform: rotateY(0deg);
+}
+
+.videoContainer > div:nth-child(6):hover ~ .title {
+  transform: rotateX(25deg);
+  transform: rotateY(0deg);
+}
+
+.videoContainer > div:nth-child(7):hover ~ .title {
+  transform: rotateX(-25deg);
+  transform: rotateY(-25deg);
+}
+
+.videoContainer > div:nth-child(8):hover ~ .title {
+  transform: rotateX(0deg);
+  transform: rotateY(-25deg);
+}
+
+.videoContainer > div:nth-child(9):hover ~ .title {
+  transform: rotateX(25deg);
+  transform: rotateY(-25deg);
+} */

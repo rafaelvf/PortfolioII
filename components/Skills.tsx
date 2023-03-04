@@ -52,12 +52,45 @@ const tabs = [
     stack: ["/postgressql.png", "/mongodb-logo-svgrepo-com.svg"],
   },
 ];
-
+const imageAnimate = {
+  offScreen: { x: -1000 },
+  onScreen: {
+    x: 0,
+    transition: {
+      duration: 2,
+      type: "spring",
+      bounce: 0.3,
+    },
+  },
+};
+const imageAnimate2 = {
+  offScreen: { x: 1000 },
+  onScreen: {
+    x: 0,
+    transition: {
+      duration: 2,
+      type: "spring",
+      bounce: 0.3,
+    },
+  },
+};
 export default function Skills() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
   return (
     <div className={styles.container}>
-      <div className={styles.title}>SKILLS</div>
+      <motion.div
+        className={styles.titleContainer}
+        initial="offScreen"
+        whileInView="onScreen"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <motion.div variants={imageAnimate} className={styles.title}>
+          Ski
+        </motion.div>
+        <motion.div variants={imageAnimate2} className={styles.title}>
+          lls
+        </motion.div>
+      </motion.div>
       <div className={styles.window}>
         <nav className={styles.nav}>
           <ul className={styles.ul}>

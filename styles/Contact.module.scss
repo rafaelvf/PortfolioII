@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .container {
-  margin: 8rem 0 4rem;
+  margin: 8rem 0 0rem;
 }
 .titleContainer {
   display: flex;
@@ -8,8 +9,15 @@
   gap: 1rem;
 }
 .title {
-  font-size: 70px;
+  font-size: 150px;
+  font-family: "Montserrat";
+  position: relative;
   display: flex;
+  align-items: center;
+  margin: 0 0 6rem;
+  text-transform: uppercase;
+  color: rgb(238, 238, 238);
+  font-weight: 600;
 }
 .ddown {
   width: 50px;
