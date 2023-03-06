@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .container {
   position: relative;
   height: 330vh; //este tengo que cambiarlo dependiendo el widht
@@ -44,6 +44,7 @@
   margin-left: 3rem;
 }
 .projectDescription {
+  font-family: "Roboto";
   font-size: 20px;
   margin-bottom: 2rem;
   margin-left: 3rem;

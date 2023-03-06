@@ -24,7 +24,7 @@ export default function Projects() {
         x: "-50%",
       },
       {
-        x: "50%",
+        x: "10%",
       }
     );
     snap.fromTo(
@@ -46,7 +46,7 @@ export default function Projects() {
       },
       {
         opacity: 1,
-        color: "red",
+        //color: "#5c80bc",
         fontSize: "25px",
       },
       "<.3"
@@ -68,7 +68,7 @@ export default function Projects() {
         opacity: 0,
       },
       {
-        x: "-30%",
+        x: "-20%",
         opacity: 1,
       },
       "<"
@@ -113,7 +113,7 @@ export default function Projects() {
       },
       {
         opacity: 1,
-        color: "blue",
+
         fontSize: "25px",
       },
       "<.3"

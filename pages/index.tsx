@@ -50,9 +50,9 @@ export default function Home() {
             <source src="/video2.mp4" type="video/mp4" />
           </video>
           <div className={styles.text}>
-            I'm a developer who loves to create good user experiences.
-            <br /> My goal is to build innovative digital products that have a
-            positive impact on society.{" "}
+            I'm a developer who loves to create good user experiences. My goal
+            is to build innovative digital products that have a positive impact
+            on society.{" "}
           </div>
 
           {/* <div className={styles.title}>FIXES</div> */}

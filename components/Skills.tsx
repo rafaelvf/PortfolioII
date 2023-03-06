@@ -82,7 +82,7 @@ export default function Skills() {
         className={styles.titleContainer}
         initial="offScreen"
         whileInView="onScreen"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
       >
         <motion.div variants={imageAnimate} className={styles.title}>
           Ski
