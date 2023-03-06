@@ -24,6 +24,14 @@ export const projectsInfo = [
     tag: "Long Lost Friends",
   },
   {
+    website: "https://paragonsnft.com/",
+    github: "",
+    title: "ParagonsNFT",
+    text: "Paragons NFT is an immersive play-to-earn experience, called the Paraverse. It's a web3 application built in Nextjs using many technologies such as Threejs, React, GSAP, and AWS. ",
+    stack: ["React", "Nextjs", "AWS", "GSAP", "SCSS"],
+    tag: "ParagonsNFT",
+  },
+  {
     website: "https://www.nowunitedmusical.io/",
     github: "",
     title: "Now United Musical",

@@ -317,7 +317,7 @@ export default function Projects() {
       <Link href="/projects">
         <button className={`${styles.seeAll} seeAll`}>
           <span>Click!</span>
-          <span>See all projects</span>
+          <span>See All Projects</span>
         </button>
       </Link>
     </div>

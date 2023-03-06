@@ -68,12 +68,16 @@ export default function ProjectCard({
               ? `${styles.tag} ${styles.tagFreelance}`
               : tag === "Side project"
               ? `${styles.tag} ${styles.tagSide}`
-              : `${styles.tag} ${styles.tagLLF}`
+              : tag === "Long Lost Friends"
+              ? `${styles.tag} ${styles.tagLLF}`
+              : `${styles.tag} ${styles.tagPara}`
             : tag === "Freelance"
             ? `${styles.tagList} ${styles.tagListFreelance}`
             : tag === "Side project"
             ? `${styles.tagList} ${styles.tagListSide}`
-            : `${styles.tagList} ${styles.tagListLLF}`
+            : tag === "Long Lost Friends"
+            ? `${styles.tagList} ${styles.tagListLLF}`
+            : `${styles.tagList} ${styles.tagListPara}`
         }
       >
         {tag}

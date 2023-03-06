@@ -31,6 +31,10 @@ export default function ProjectsPage() {
           <div className={styles.filterInner2}></div>
           <a href="#">Long Lost Friends</a>
         </div>
+        <div className={styles.filter} onClick={() => setFilter("ParagonsNFT")}>
+          <div className={styles.filterInner2}></div>
+          <a href="#">ParagonsNFT</a>
+        </div>
         <div
           className={styles.filter}
           onClick={() => setFilter("Side project")}

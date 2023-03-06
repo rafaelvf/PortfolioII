@@ -159,6 +159,9 @@
   &LLF {
     background: rgb(255, 226, 221);
   }
+  &Para {
+    background: #779ecb;
+  }
 }
 .tagList {
   padding: 3px 6px;
@@ -178,6 +181,9 @@
   }
   &LLF {
     background: rgb(255, 226, 221);
+  }
+  &Para {
+    background: #779ecb;
   }
   @media (max-width: 800px) {
     font-size: 14px;
