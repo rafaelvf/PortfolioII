@@ -1,23 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .container {
   background-color: #fafafa;
   min-height: 100vh;
 }
 
 .title {
-  font-size: 90px;
+  font-size: 110px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: rgb(223, 223, 223);
+  font-weight: 600;
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  @media (max-width: 600px) {
+    font-size: 65px;
+  }
 }
 .filterContainer {
   display: flex;
   justify-content: center;
-  @media (max-width: 500px) {
+  @media (max-width: 770px) {
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 0 1.5rem;
+    gap: 4px;
   }
 }
 .filter {
+  font-family: "Roboto";
   border: 1px solid #eaeaea;
   border-radius: 1px;
   padding: 10px 20px;
@@ -39,11 +51,10 @@
   display: flex;
   align-items: center;
   padding: 0 5px;
-  @media (max-width: 520px) {
-    margin-left: 1rem;
-  }
-  @media (max-width: 485px) {
-    margin-top: 1rem;
+
+  @media (max-width: 770px) {
+    margin-left: 0rem;
+    margin-top: 0;
     height: 40px;
   }
 }

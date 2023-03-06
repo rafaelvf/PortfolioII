@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .container {
   width: 350px;
   height: 300px;
@@ -7,6 +9,7 @@
   padding: 8px;
   box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
   transition: all 0.5s;
+  font-family: "Roboto";
 }
 .containerList {
   width: 850px;
@@ -24,31 +27,9 @@
 }
 .container:hover {
   transform: translateY(-10px);
-  .title {
-    &Freelance {
-      color: rgb(251, 211, 124);
-    }
-    &Side {
-      color: rgb(158, 219, 158);
-    }
-    &LLF {
-      color: rgb(252, 164, 149);
-    }
-  }
 }
 .containerList:hover {
   transform: translateY(-6px);
-  .titleList {
-    &Freelance {
-      color: rgb(251, 211, 124);
-    }
-    &Side {
-      color: rgb(158, 219, 158);
-    }
-    &LLF {
-      color: rgb(252, 164, 149);
-    }
-  }
 }
 .iconContainer {
   display: flex;
@@ -94,6 +75,7 @@
   cursor: pointer;
 }
 .titleList {
+  font-family: "Roboto";
   font-size: 23px;
   font-weight: 700;
   cursor: pointer;

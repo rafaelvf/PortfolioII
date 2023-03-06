@@ -35,23 +35,7 @@ export default function ProjectCard({
         )}
       </div>
       <a href={website} target="_blank" rel="noopener noreferrerz">
-        <div
-          className={
-            grid
-              ? tag === "Freelance"
-                ? `${styles.title} ${styles.titleFreelance}`
-                : tag === "Side project"
-                ? `${styles.title} ${styles.titleSide}`
-                : `${styles.title} ${styles.titleLLF}`
-              : tag === "Freelance"
-              ? `${styles.titleList} ${styles.titleListFreelance}`
-              : tag === "Side project"
-              ? `${styles.titleList} ${styles.titleListSide}`
-              : `${styles.titleList} ${styles.titleListLLF}`
-          }
-        >
-          {title}
-        </div>
+        <div className={grid ? styles.title : styles.titleList}>{title}</div>
       </a>
       <div className={grid ? styles.text : styles.textList}>{text}</div>
       <div className={grid ? styles.stackContainer : styles.stackContainerList}>

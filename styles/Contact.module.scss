@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 .container {
   // margin: 8rem 0 0rem;
   height: 100vh;
@@ -33,10 +34,12 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-left: 21%;
-  margin-right: 3%;
+  width: 700px;
+  height: 85px;
+  margin: 0 auto;
   z-index: 1;
   transform: translateY(190%);
+  align-items: center;
 }
 .logos {
   width: 80px;
@@ -53,6 +56,26 @@
   position: relative;
   cursor: pointer;
   //box-shadow: 2px 3px 5px rgba(129, 127, 127, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  gap: 1.5rem;
+}
+.infoContainer2 {
+  width: 70px;
+  height: 70px;
+
+  background-color: white;
+  color: black;
+  padding: 18px 20px;
+  border-radius: 5px;
+  font-family: "Rampart One";
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px rgba(129, 127, 127, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;

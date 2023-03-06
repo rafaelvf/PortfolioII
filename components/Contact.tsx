@@ -44,6 +44,7 @@ export default function Contact() {
         <div className={styles.infoContainer}>
           <img src="/twitter-color-svgrepo-com.svg" className={styles.logos} />
         </div>
+        <div className={styles.infoContainer2}>CV</div>
       </div>
     </div>
   );
