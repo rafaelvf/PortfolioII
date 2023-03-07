@@ -11,21 +11,28 @@ import { useAnimation } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectsFramer() {
-  const { ref, inView } = useInView();
-  const { scrollY, scrollYProgress } = useScroll();
+  const ref = useRef(null);
+  const { scrollY } = useScroll();
+
   const x = useTransform(scrollY, [0, 700], [-500, 40]);
   const opacity1a = useTransform(scrollY, [400, 700], [0, 1]);
   const opacity1b = useTransform(scrollY, [600, 900], [0, 1]);
   const opacity1c = useTransform(scrollY, [700, 900], [0, 1]);
   const opacity1d = useTransform(scrollY, [800, 1000], [0, 1]);
   const opacity2a = useTransform(scrollY, [1000, 1300], [0, 1]);
-  const opacity2b = useTransform(scrollY, [1200, 1500], [0, 1]);
-  const opacity2c = useTransform(scrollY, [1300, 1500], [0, 1]);
-  const opacity2d = useTransform(scrollY, [1400, 1600], [0, 1]);
+  const opacity2b = useTransform(scrollY, [1300, 1700], [0, 1]);
+  const opacity2c = useTransform(scrollY, [1400, 1700], [0, 1]);
+  const opacity2d = useTransform(scrollY, [1500, 1700], [0, 1]);
+  const opacity3a = useTransform(scrollY, [2000, 2200], [0, 1]);
+  const opacity3b = useTransform(scrollY, [2100, 2200], [0, 1]);
+  const opacity3c = useTransform(scrollY, [2200, 2500], [0, 1]);
+  const opacity3d = useTransform(scrollY, [2300, 2600], [0, 1]);
   const moco1a = useTransform(scrollY, [400, 850], [500, 0]);
   const moco1b = useTransform(scrollY, [500, 1100], [500, 0]);
   const moco2a = useTransform(scrollY, [1000, 1450], [500, 0]);
   const moco2b = useTransform(scrollY, [1100, 1700], [500, 0]);
+  const moco3a = useTransform(scrollY, [1700, 2150], [500, 0]);
+  const moco3b = useTransform(scrollY, [1800, 2400], [500, 0]);
 
   return (
     <div className={`${styles.container} container`}>
@@ -41,6 +48,7 @@ export default function ProjectsFramer() {
             01
           </motion.div>
           <motion.div
+            ref={ref}
             style={{ opacity: opacity1b }}
             className={`${styles.projectTitle} projectTitle`}
           >
@@ -127,25 +135,47 @@ export default function ProjectsFramer() {
 
       <div className={styles.projectContainer}>
         <div className={styles.projectInfo}>
-          <div className={`${styles.number} number3`}>03</div>
-          <div className={`${styles.projectTitle} projectTitle3`}>
+          <motion.div
+            style={{ opacity: opacity3a }}
+            className={`${styles.number} number3`}
+          >
+            03
+          </motion.div>
+          <motion.div
+            style={{ opacity: opacity3b }}
+            className={`${styles.projectTitle} projectTitle3`}
+          >
             Moodies NFT
-          </div>
-          <div className={`${styles.projectPosition} projectPosition3`}>
+          </motion.div>
+          <motion.div
+            style={{ opacity: opacity3c }}
+            className={`${styles.projectPosition} projectPosition3`}
+          >
             Front end @ LLF
-          </div>
-          <div className={`${styles.projectDescription} projectDescription3`}>
+          </motion.div>
+          <motion.div
+            style={{ opacity: opacity3d }}
+            className={`${styles.projectDescription} projectDescription3`}
+          >
             MoodiesNFT is a web3 project that aims to bring emotional
             intelligence to the world of non-fungible tokens (NFTs). With
             MoodiesNFT, users can express their emotions through unique digital
             assets that reflect their moods and personalities. <br /> The
             projject was built using the following technologies: React,
             Typescript, Nextjs, AWS, GSAP, scss.
-          </div>
+          </motion.div>
         </div>
         <div className={styles.projectImages}>
-          <img src="/moodies1.png" className={`${styles.mockup} mockup3`} />
-          <img src="/moodies2.png" className={`${styles.mockup22} mockup33`} />
+          <motion.img
+            style={{ y: moco3a }}
+            src="/moodies1.png"
+            className={`${styles.mockup} mockup3`}
+          />
+          <motion.img
+            style={{ x: moco3b }}
+            src="/moodies2.png"
+            className={`${styles.mockup22} mockup33`}
+          />
         </div>
       </div>
       <Link href="/projects">
