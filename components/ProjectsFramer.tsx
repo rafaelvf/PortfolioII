@@ -5,14 +5,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectsFramer() {
   const ref = useRef(null);
-  const ref2 = useRef(null);
+
   const { scrollY } = useScroll();
   const { scrollYProgress } = useScroll({
     target: ref,

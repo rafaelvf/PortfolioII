@@ -14,7 +14,7 @@ export default function Contact() {
         y: "110%",
       },
       {
-        x: "5%",
+        x: "10%",
         y: "110%",
 
         scrollTrigger: {

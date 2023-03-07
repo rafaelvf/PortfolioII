@@ -8,9 +8,17 @@
   color: rgb(238, 238, 238);
   font-weight: 600;
   transition: all 0.3s ease-out;
+  @media (max-width: 900px) {
+    font-size: 100px;
+  }
+  @media (max-width: 650px) {
+    font-size: 80px;
+  }
+  @media (max-width: 470px) {
+    font-size: 60px;
+  }
 }
 .projectContainer {
-  //border: 1px solid red;
   display: flex;
   justify-content: space-around;
   margin-top: 15rem;
@@ -29,7 +37,7 @@
   margin-left: 1rem;
 }
 .projectTitle {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 2rem;
   margin-left: 3rem;
 }

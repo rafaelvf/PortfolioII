@@ -32,6 +32,21 @@
   width: 800px;
   height: 200px;
 }
+@media (max-width: 900px) {
+  .title {
+    width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .title {
+    width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    width: 360px;
+  }
+}
 .text {
   position: absolute;
   top: 70%;
