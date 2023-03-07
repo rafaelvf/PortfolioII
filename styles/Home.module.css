@@ -48,13 +48,41 @@
   }
 }
 .text {
+  background-color: #235c5b;
+  font-family: "Roboto";
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 23px;
-  width: 390px;
+  width: 700px;
+  color: white;
+  padding: 5px 7px;
+  border-radius: 16px;
   text-align: center;
+}
+.arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    width: 70px;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 70px;
+  }
 }
 /* .videoContainer {
   position: relative;

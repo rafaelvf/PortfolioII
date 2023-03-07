@@ -51,11 +51,15 @@ export default function Home() {
           >
             <source src="/video2.mp4" type="video/mp4" />
           </video>
-          <div className={styles.text}>
+          <img
+            src="/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+            className={styles.arrow}
+          />
+          {/* <div className={styles.text}>
             I'm a developer who loves to create good user experiences. My goal
             is to build innovative digital products that have a positive impact
             on society.{" "}
-          </div>
+          </div> */}
 
           {/* <div className={styles.title}>FIXES</div> */}
           {/* <MusicPlayer /> */}
