@@ -13,6 +13,7 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import ProjectsFramer from "../components/ProjectsFramer";
+import ProjectsMobile from "../components/ProjectsMobile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,7 +61,7 @@ export default function Home() {
           {/* <MusicPlayer /> */}
         </div>
         <ProjectsFramer />
-        {/* <Projects /> */}
+        <ProjectsMobile />
         <Skills />
         <Contact />
       </main>
