@@ -12,6 +12,7 @@ import MusicPlayer from "../components/MusicPlayer";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import ProjectsFramer from "../components/ProjectsFramer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +59,8 @@ export default function Home() {
           {/* <div className={styles.title}>FIXES</div> */}
           {/* <MusicPlayer /> */}
         </div>
-        <Projects />
+        <ProjectsFramer />
+        {/* <Projects /> */}
         <Skills />
         <Contact />
       </main>
