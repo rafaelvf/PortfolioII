@@ -17,14 +17,14 @@ export default function ProjectsFramer() {
 
   const x = useTransform(scrollY, [0, 700], [-500, 40]);
   const opacity1a = useTransform(scrollYProgress, [0.07, 0.2], [0, 1]);
-  const opacity1b = useTransform(scrollYProgress, [0.12, 0.25], [0, 1]);
-  const opacity1c = useTransform(scrollYProgress, [0.18, 0.35], [0, 1]);
-  const opacity1d = useTransform(scrollYProgress, [0.22, 0.35], [0, 1]);
+  const opacity1b = useTransform(scrollYProgress, [0.1, 0.22], [0, 1]);
+  const opacity1c = useTransform(scrollYProgress, [0.15, 0.3], [0, 1]);
+  const opacity1d = useTransform(scrollYProgress, [0.2, 0.32], [0, 1]);
   const opacity2a = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]);
-  const opacity2b = useTransform(scrollYProgress, [0.4, 0.55], [0, 1]);
+  const opacity2b = useTransform(scrollYProgress, [0.38, 0.5], [0, 1]);
   const opacity2c = useTransform(scrollYProgress, [0.45, 0.6], [0, 1]);
-  const opacity2d = useTransform(scrollYProgress, [0.5, 0.6], [0, 1]);
-  const opacity3a = useTransform(scrollYProgress, [0.6, 0.75], [0, 1]);
+  const opacity2d = useTransform(scrollYProgress, [0.48, 0.6], [0, 1]);
+  const opacity3a = useTransform(scrollYProgress, [0.55, 0.67], [0, 1]);
   const opacity3b = useTransform(scrollYProgress, [0.65, 0.8], [0, 1]);
   const opacity3c = useTransform(scrollYProgress, [0.7, 0.85], [0, 1]);
   const opacity3d = useTransform(scrollYProgress, [0.73, 0.85], [0, 1]);
@@ -53,7 +53,13 @@ export default function ProjectsFramer() {
               style={{ opacity: opacity1b }}
               className={`${styles.projectTitle} projectTitle`}
             >
-              Ambush design
+              <a
+                href="https://ambushdesign.io/"
+                target="_blank"
+                rel="noopener noreferrerz"
+              >
+                Ambush design
+              </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity1c }}
@@ -99,7 +105,13 @@ export default function ProjectsFramer() {
               style={{ opacity: opacity2b }}
               className={`${styles.projectTitle} projectTitle2`}
             >
-              DelincuenMapa
+              <a
+                href="https://delincuenmapa.com"
+                target="_blank"
+                rel="noopener noreferrerz"
+              >
+                DelincuenMapa
+              </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity2c }}
@@ -146,7 +158,13 @@ export default function ProjectsFramer() {
               style={{ opacity: opacity3b }}
               className={`${styles.projectTitle} projectTitle3`}
             >
-              Moodies NFT
+              <a
+                href="https://www.moodiesnft.io/"
+                target="_blank"
+                rel="noopener noreferrerz"
+              >
+                Moodies NFT
+              </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity3c }}
