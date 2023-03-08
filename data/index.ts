@@ -4,7 +4,7 @@ export const projectsInfo = [
     github: "",
     title: "Ambushdesign",
     text: "Ambushdesign official Web3 project. Ambush brand decided to enter the NFT world, as a team we created their Web3 identity.",
-    stack: ["React", "Nextjs", "AWS", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "AWS", "SCSS"],
     tag: "Long Lost Friends",
   },
   {
@@ -12,7 +12,7 @@ export const projectsInfo = [
     github: "",
     title: "DelincuenMapa",
     text: "DelincuenMapa is a web application used to map and record crimes that have occurred in different areas.",
-    stack: ["React", "Nextjs", "Mongo", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "Mongo", "SCSS"],
     tag: "Side project",
   },
   {
@@ -20,7 +20,7 @@ export const projectsInfo = [
     github: "",
     title: "Moodiesnft",
     text: "MoodiesNFT is a web3 project that aims to bring emotional intelligence to the world of non-fungible tokens (NFTs). With MoodiesNFT, users can express their emotions through unique digital assets that reflect their moods and personalities.  ",
-    stack: ["React", "Nextjs", "AWS", "GSAP", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "AWS", "GSAP", "SCSS"],
     tag: "Long Lost Friends",
   },
   {
@@ -28,7 +28,7 @@ export const projectsInfo = [
     github: "",
     title: "ParagonsNFT",
     text: "Paragons NFT is an immersive play-to-earn experience, called the Paraverse. It's a web3 application built in Nextjs using many technologies such as Threejs, React, GSAP, and AWS. ",
-    stack: ["React", "Nextjs", "AWS", "GSAP", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "AWS", "GSAP", "SCSS"],
     tag: "ParagonsNFT",
   },
   {
@@ -36,7 +36,7 @@ export const projectsInfo = [
     github: "",
     title: "Now United Musical",
     text: "Developed the web for NowUnited which is a musical project that brings together talented young performers from around the world to create a global music group. ",
-    stack: ["React", "Nextjs", "GSAP", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "GSAP", "SCSS"],
     tag: "Long Lost Friends",
   },
   {
@@ -52,7 +52,7 @@ export const projectsInfo = [
     github: "",
     title: "TheJPeffect",
     text: "TheJPeffect is a creative project that showcases the art and design work of artist and designer JP, featuring bold, colorful graphics and unique illustrations. Through his work, JP aims to inspire and uplift others, bringing joy and positivity to the world.  ",
-    stack: ["React", "Nextjs", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "SCSS"],
     tag: "Long Lost Friends",
   },
   {
@@ -92,7 +92,7 @@ export const projectsInfo = [
     github: "",
     title: "Flycloudniners",
     text: "5,555 high utility NFT collection + storyverse + limited edition brand collab drops.  ",
-    stack: ["React", "Nextjs", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "SCSS"],
     tag: "Long Lost Friends",
   },
   {
@@ -116,7 +116,7 @@ export const projectsInfo = [
     github: "",
     title: "Kokiesnft",
     text: "Kokiesnft is a web3 project made by Midas production.  ",
-    stack: ["React", "Nextjs", "SCSS"],
+    stack: ["React", "Typescript", "Nextjs", "SCSS"],
     tag: "Long Lost Friends",
   },
   {
