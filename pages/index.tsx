@@ -18,11 +18,12 @@ export default function Home() {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const opacity = useTransform(scrollY, [100, 200], [0, 1]);
+  const opacity = useTransform(scrollY, [100, 200, 450, 495], [0, 1, 1, 0]);
   const scale = useTransform(scrollY, [0, 100], [1, 0]);
-  const scale2 = useTransform(scrollY, [100, 300], [0, 1]);
+  const scale2 = useTransform(scrollY, [100, 250, 450, 495], [0, 1, 1, 0]);
   const width = useTransform(scrollY, [200, 400], [300, 500]);
-  const translate = useTransform(scrollY, [390, 600], [0, -500]);
+  const translate = useTransform(scrollY, [250, 400], [0, 100]);
+  const height = useTransform(scrollY, [400, 500], [200, 0]);
 
   return (
     <>
@@ -64,7 +65,7 @@ export default function Home() {
           />
           <div className={styles.textContainer}>
             <motion.div
-              style={{ opacity, scale: scale2 }}
+              style={{ opacity, scale: scale2, height }}
               className={styles.text}
             >
               I'm a developer who loves to create good user experiences. My goal
