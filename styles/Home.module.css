@@ -37,17 +37,44 @@
   height: 200px;
 }
 @media (max-width: 900px) {
+  .videoContainer {
+    width: 600px;
+  }
   .title {
+    width: 600px;
+  }
+  .textContainer {
+    width: 600px;
+  }
+  .text {
     width: 600px;
   }
 }
 @media (max-width: 650px) {
+  .videoContainer {
+    width: 450px;
+  }
   .title {
+    width: 450px;
+  }
+  .textContainer {
+    width: 450px;
+  }
+  .text {
     width: 450px;
   }
 }
 @media (max-width: 480px) {
+  .videoContainer {
+    width: 360px;
+  }
   .title {
+    width: 360px;
+  }
+  .textContainer {
+    width: 360px;
+  }
+  .text {
     width: 360px;
   }
 }
@@ -73,6 +100,30 @@
   padding: 5px 7px;
   border-radius: 16px;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .textContainer {
+    width: 600px;
+  }
+  .text {
+    width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .textContainer {
+    width: 450px;
+  }
+  .text {
+    width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .textContainer {
+    width: 360px;
+  }
+  .text {
+    width: 360px;
+  }
 }
 .arrow {
   position: absolute;
