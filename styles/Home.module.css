@@ -23,12 +23,16 @@
   align-items: center;
   font-size: 25px;
 }
-.title {
+.videoContainer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 200px;
+  width: 800px;
+  height: 200px;
+}
+.title {
   width: 800px;
   height: 200px;
 }
@@ -47,15 +51,24 @@
     width: 360px;
   }
 }
+.textContainer {
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid red; */
+}
 .text {
   background-color: #235c5b;
   font-family: "Roboto";
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 23px;
-  width: 700px;
+  width: 800px;
+  height: 150px;
+  display: flex;
+  align-items: center;
   color: white;
   padding: 5px 7px;
   border-radius: 16px;
