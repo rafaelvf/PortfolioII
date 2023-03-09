@@ -48,7 +48,13 @@ export default function ProjectsMobile() {
               style={{ opacity: opacity1b }}
               className={`${styles.projectTitle} projectTitle`}
             >
-              Ambush design
+              <a
+                href="https://ambushdesign.io/"
+                target="_blank"
+                rel="noopener noreferrerz"
+              >
+                Ambush design
+              </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity1c }}
@@ -89,7 +95,13 @@ export default function ProjectsMobile() {
               style={{ opacity: opacity2b }}
               className={`${styles.projectTitle} projectTitle2`}
             >
-              DelincuenMapa
+              <a
+                href="https://delincuenmapa.com"
+                target="_blank"
+                rel="noopener noreferrerz"
+              >
+                DelincuenMapa
+              </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity2c }}
@@ -131,7 +143,13 @@ export default function ProjectsMobile() {
               style={{ opacity: opacity3b }}
               className={`${styles.projectTitle} projectTitle3`}
             >
-              Moodies NFT
+              <a
+                href="https://www.moodiesnft.io/"
+                target="_blank"
+                rel="noopener noreferrerz"
+              >
+                Moodies NFT
+              </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity3c }}
