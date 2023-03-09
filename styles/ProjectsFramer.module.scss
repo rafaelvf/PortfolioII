@@ -71,7 +71,7 @@
   }
 }
 .mockup {
-  width: 300px;
+  width: 350px;
   position: absolute;
   top: 0;
   left: 20%;
@@ -83,7 +83,7 @@
 .mockup2 {
   width: 530px;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 0%;
   transition: all 0.3s ease-out;
   @media (max-width: 1200px) {
