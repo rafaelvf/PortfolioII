@@ -53,7 +53,7 @@ export default function Home() {
               playsInline
               autoPlay
               preload="auto"
-              loop
+              loop={true}
               controls={true}
               className={styles.title}
             >
