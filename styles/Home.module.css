@@ -148,6 +148,11 @@
     width: 70px;
   }
 }
+@media (max-width: 500px) {
+  .arrow {
+    top: 85%;
+  }
+}
 /* .videoContainer {
   position: relative;
   display: grid;
