@@ -47,7 +47,7 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <Birds />
           <div className={styles.videoContainer}>
-            <motion.video
+            {/* <motion.video
               style={{ scale: scale }}
               muted
               playsInline
@@ -58,7 +58,12 @@ export default function Home() {
               className={styles.title}
             >
               <source src="/video2.mp4" type="video/mp4" />
-            </motion.video>
+            </motion.video> */}
+            <motion.img
+              style={{ scale: scale }}
+              src="/video2.gif"
+              className={styles.title}
+            />
           </div>
           <img
             src="/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
