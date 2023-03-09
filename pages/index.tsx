@@ -54,7 +54,7 @@ export default function Home() {
               autoPlay
               preload="auto"
               loop={true}
-              controls={true}
+              // controls={true}
               className={styles.title}
             >
               <source src="/video2.mp4" type="video/mp4" />
