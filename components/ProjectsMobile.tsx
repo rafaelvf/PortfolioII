@@ -13,22 +13,22 @@ export default function ProjectsMobile() {
     offset: ["start end", "end start"],
   });
 
-  const x = useTransform(scrollY, [0, 700], [-500, 40]);
-  const opacity1a = useTransform(scrollYProgress, [0.07, 0.2], [0, 1]);
-  const opacity1b = useTransform(scrollYProgress, [0.12, 0.25], [0, 1]);
-  const opacity1c = useTransform(scrollYProgress, [0.18, 0.33], [0, 1]);
-  const opacity1d = useTransform(scrollYProgress, [0.22, 0.35], [0, 1]);
+  const x = useTransform(scrollY, [0, 600], [-500, 40]);
+  const opacity1a = useTransform(scrollYProgress, [0.07, 0.16], [0, 1]);
+  const opacity1b = useTransform(scrollYProgress, [0.12, 0.22], [0, 1]);
+  const opacity1c = useTransform(scrollYProgress, [0.18, 0.24], [0, 1]);
+  const opacity1d = useTransform(scrollYProgress, [0.2, 0.26], [0, 1]);
   const opacity2a = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]);
-  const opacity2b = useTransform(scrollYProgress, [0.4, 0.55], [0, 1]);
-  const opacity2c = useTransform(scrollYProgress, [0.45, 0.6], [0, 1]);
-  const opacity2d = useTransform(scrollYProgress, [0.5, 0.6], [0, 1]);
+  const opacity2b = useTransform(scrollYProgress, [0.4, 0.5], [0, 1]);
+  const opacity2c = useTransform(scrollYProgress, [0.45, 0.51], [0, 1]);
+  const opacity2d = useTransform(scrollYProgress, [0.46, 0.52], [0, 1]);
   const opacity3a = useTransform(scrollYProgress, [0.6, 0.75], [0, 1]);
-  const opacity3b = useTransform(scrollYProgress, [0.65, 0.8], [0, 1]);
-  const opacity3c = useTransform(scrollYProgress, [0.7, 0.85], [0, 1]);
-  const opacity3d = useTransform(scrollYProgress, [0.73, 0.85], [0, 1]);
+  const opacity3b = useTransform(scrollYProgress, [0.65, 0.76], [0, 1]);
+  const opacity3c = useTransform(scrollYProgress, [0.66, 0.78], [0, 1]);
+  const opacity3d = useTransform(scrollYProgress, [0.67, 0.8], [0, 1]);
   const moco1a = useTransform(scrollYProgress, [0.17, 0.26], [500, 0]);
-  const moco2b = useTransform(scrollYProgress, [0.44, 0.56], [700, 0]);
-  const moco3b = useTransform(scrollYProgress, [0.64, 0.76], [700, 0]);
+  const moco2b = useTransform(scrollYProgress, [0.44, 0.49], [700, 0]);
+  const moco3b = useTransform(scrollYProgress, [0.64, 0.74], [700, 0]);
 
   return (
     <div className={`${styles.container} container`}>
