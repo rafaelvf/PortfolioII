@@ -15,7 +15,7 @@ export default function ProjectsFramer() {
     offset: ["start end", "end start"],
   });
 
-  const x = useTransform(scrollY, [0, 700], [-500, 40]);
+  const x = useTransform(scrollY, [0, 600], [-500, 40]);
   const opacity1a = useTransform(scrollYProgress, [0.07, 0.2], [0, 1]);
   const opacity1b = useTransform(scrollYProgress, [0.1, 0.22], [0, 1]);
   const opacity1c = useTransform(scrollYProgress, [0.15, 0.25], [0, 1]);
