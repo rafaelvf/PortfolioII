@@ -39,9 +39,11 @@
 @media (max-width: 900px) {
   .videoContainer {
     width: 600px;
+    height: 150px;
   }
   .title {
     width: 600px;
+    height: 150px;
   }
   .textContainer {
     width: 600px;
@@ -53,9 +55,11 @@
 @media (max-width: 650px) {
   .videoContainer {
     width: 450px;
+    height: 112px;
   }
   .title {
     width: 450px;
+    height: 112px;
   }
   .textContainer {
     width: 450px;
@@ -67,9 +71,11 @@
 @media (max-width: 480px) {
   .videoContainer {
     width: 360px;
+    height: 90px;
   }
   .title {
     width: 360px;
+    height: 90px;
   }
   .textContainer {
     width: 360px;
