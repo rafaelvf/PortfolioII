@@ -33,6 +33,7 @@
   height: 200px;
 }
 .title {
+  position: absolute;
   width: 800px;
   height: 200px;
 }
