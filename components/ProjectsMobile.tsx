@@ -28,7 +28,7 @@ export default function ProjectsMobile() {
   const opacity3d = useTransform(scrollYProgress, [0.67, 0.8], [0, 1]);
   const moco1a = useTransform(scrollYProgress, [0.17, 0.26], [500, 0]);
   const moco2b = useTransform(scrollYProgress, [0.44, 0.49], [700, 0]);
-  const moco3b = useTransform(scrollYProgress, [0.64, 0.74], [700, 0]);
+  const moco3b = useTransform(scrollYProgress, [0.61, 0.71], [700, 0]);
 
   return (
     <div className={`${styles.container} container`}>
