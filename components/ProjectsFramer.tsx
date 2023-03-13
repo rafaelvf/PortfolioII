@@ -181,7 +181,7 @@ export default function ProjectsFramer() {
               MoodiesNFT, users can express their emotions through unique
               digital assets that reflect their moods and personalities. <br />{" "}
               The projject was built using the following technologies: React,
-              Typescript, Nextjs, AWS, GSAP, scss.
+              Typescript, Nextjs, AWS, GSAP, SCSS.
             </motion.div>
           </div>
           <div className={styles.projectImages}>
