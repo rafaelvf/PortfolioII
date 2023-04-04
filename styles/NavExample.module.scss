@@ -1,0 +1,143 @@
+.container {
+  background-color: #2b5970;
+  width: 100%;
+  height: 100px;
+  padding: 25px 35px;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.logo {
+  width: 63px;
+  height: 57px;
+}
+.title {
+  color: #ffffff;
+  font-size: 24px;
+}
+.tagsContainer {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @media (max-width: 500px) {
+    gap: 13px;
+  }
+}
+.linksContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.link {
+  color: #f9fdfe;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+  @media (max-width: 1024px) {
+    color: #2b5970;
+  }
+}
+.link:hover {
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.linksContainerMobile {
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+    position: relative;
+  }
+}
+.linksMobile {
+  position: absolute;
+  border-radius: 8px;
+  background-color: #f9fdfe;
+  top: 160%;
+  left: -220%;
+  padding: 1rem 1.2rem;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+
+  display: none;
+  &Open {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.loginContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.logo2 {
+  width: 30px;
+  height: 30px;
+}
+.login {
+  background: #f9fdfe;
+  color: #2eaae1;
+  border: none;
+  padding: 8px 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.register {
+  background: #2eaae1;
+  color: #f9fdfe;
+  border: none;
+  padding: 8px 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.register:hover,
+.login:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.loginContainerMobile {
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+    position: relative;
+  }
+}
+.loginMobile {
+  position: absolute;
+  border-radius: 8px;
+  background-color: #f9fdfe;
+  top: 160%;
+  left: -260%;
+  padding: 1rem 1.2rem;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+
+  display: none;
+  &Open {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
