@@ -48,6 +48,14 @@ export const projectsInfo = [
     tag: "Freelance",
   },
   {
+    website: "https://marciafernandez.com/",
+    github: "",
+    title: "Marcia Fernandez",
+    text: "Developed the web for Marcia Fernandez to showcase her photography journey.  ",
+    stack: ["React", "Nextjs", "SCSS"],
+    tag: "Freelance",
+  },
+  {
     website: "https://www.thejpeffect.io/",
     github: "",
     title: "TheJPeffect",
