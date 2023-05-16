@@ -262,7 +262,7 @@ export default function Projects() {
         </div>
         <div className={styles.projectImages}>
           <img src="/ambush2.png" className={`${styles.mockup} mockup1`} />
-          <img src="/ambush1.png" className={`${styles.mockup2} mockup11`} />
+          <img src="/ambush1.webp" className={`${styles.mockup2} mockup11`} />
         </div>
       </div>
 

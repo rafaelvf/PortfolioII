@@ -87,7 +87,7 @@ export default function ProjectsFramer() {
             />
             <motion.img
               style={{ x: moco1b }}
-              src="/ambush1.png"
+              src="/ambush1.webp"
               className={`${styles.mockup2} mockup11`}
             />
           </div>
