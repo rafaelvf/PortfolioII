@@ -72,7 +72,7 @@ export default function Contact() {
           </div>
         </a>
         <a
-          href="https://www.canva.com/design/DAFcX3I4LLs/AkihSj0essJvQ9eKitRSVg/view?utm_content=DAFcX3I4LLs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          href="https://www.canva.com/design/DAFmelmLHQw/75qgraSFxRVGZygTwSOoAQ/view?utm_content=DAFmelmLHQw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           target="_blank"
           rel="noopener noreferrerz"
         >
