@@ -106,41 +106,39 @@ export default function ProjectsFramer() {
               className={`${styles.projectTitle} projectTitle2`}
             >
               <a
-                href="https://delincuenmapa.com"
+                href="https://cuquipay.com"
                 target="_blank"
                 rel="noopener noreferrerz"
               >
-                DelincuenMapa
+                Cuquipay
               </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity2c }}
               className={`${styles.projectPosition} projectPosition2`}
             >
-              Full stack project
+              Co-founder - Full stack developer
             </motion.div>
             <motion.div
               style={{ opacity: opacity2d }}
               className={`${styles.projectDescription} projectDescription2`}
             >
-              DelincuenMapa is a full stack web app that helps users visualize
-              the most dangerous parts of a city, as well as report crimes made
-              to them. User are able to filter by different crimes or articles
-              as well as different times of the day.
+              Cuquipay is a software that helps Entrepreneurs to manage their
+              sales and promote their products very fast and efficiently.
               <br /> <div className={styles.space}></div>The application was
               made with the following technologies: Nextjs, Javascript, HTML,
-              CSS, React, Redux, MongoDB, mongoose -Node.js,{" "}
+              Tailwind, React, Redux, MongoDB, mongoose, Node.js{" "}
             </motion.div>
           </div>
           <div className={styles.projectImages}>
             <motion.img
               style={{ y: moco2a }}
-              src="/mDelin1.png"
+              src="/cuqui1.png"
               className={`${styles.mockup} mockup2`}
             />
             <motion.img
               style={{ x: moco2b }}
-              src="/mDelin2.png"
+              src="/cuqui2.png"
               className={`${styles.mockup2} mockup22`}
             />
           </div>

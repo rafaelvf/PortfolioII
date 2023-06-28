@@ -1,5 +1,13 @@
 export const projectsInfo = [
   {
+    website: "https://cuquipay.com/",
+    github: "",
+    title: "Cuquipay",
+    text: "Cuquipay is a software that helps Entrepreneurs to manage their sales and promote their products very fast and efficiently.",
+    stack: ["React", "Typescript", "Nextjs", "Tailwind", "SCSS"],
+    tag: "Side project",
+  },
+  {
     website: "https://ambushdesign.io/",
     github: "",
     title: "Ambushdesign",
