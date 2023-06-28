@@ -127,13 +127,13 @@ export default function ProjectsFramer() {
               sales and promote their products very fast and efficiently.
               <br /> <div className={styles.space}></div>The application was
               made with the following technologies: Nextjs, Javascript, HTML,
-              Tailwind, React, Redux, MongoDB, mongoose, Node.js{" "}
+              Tailwind, React, Redux, MongoDB, Mongoose, Node.js{" "}
             </motion.div>
           </div>
           <div className={styles.projectImages}>
             <motion.img
               style={{ y: moco2a }}
-              src="/cuqui1.png"
+              src="/cuqui3.png"
               className={`${styles.mockup} mockup2`}
             />
             <motion.img
