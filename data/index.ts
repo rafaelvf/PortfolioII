@@ -58,6 +58,14 @@ export const projectsInfo = [
     tag: "ParagonsNFT",
   },
   {
+    website: "https://salinassailingweek.com/",
+    github: "",
+    title: "Salinassailingweek",
+    text: "This website shocases what the event will be, its news, pictures and results.",
+    stack: ["React", "Nextjs", "Tailwind", "Sanity CMS"],
+    tag: "Freelance",
+  },
+  {
     website: "https://www.nowunitedmusical.io/",
     github: "",
     title: "Now United Musical",
