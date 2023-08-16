@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Contact.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+import PDFViewer from "../components/PDFViewer";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
+  const pdfUrl = "/RafaelViteriCV.pdf";
   useEffect(() => {
     gsap.fromTo(
       ".title2",
@@ -71,12 +72,9 @@ export default function Contact() {
             />
           </div>
         </a>
-        <a
-          href="https://www.canva.com/design/DAFmelmLHQw/75qgraSFxRVGZygTwSOoAQ/view?utm_content=DAFmelmLHQw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-          target="_blank"
-          rel="noopener noreferrerz"
-        >
+        <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
           <div className={styles.infoContainer2}>CV</div>
+          <PDFViewer pdfUrl={pdfUrl} />
         </a>
       </div>
     </div>
