@@ -8,6 +8,23 @@ export const projectsInfo = [
     tag: "Side project",
   },
   {
+    website: "https://hazmeunaoferta.almacenesmarriott.com/",
+    github: "",
+    title: "Hazmeunaoferta",
+    text: "Hazmeunaoferta is an e-commerce that let the client negotiate prices.",
+    stack: [
+      "React",
+      "SAP integration",
+      "Paymentez",
+      "Sanity",
+      "Typescript",
+      "Nextjs",
+      "Mongo",
+      "SCSS",
+    ],
+    tag: "Freelance",
+  },
+  {
     website: "https://ambushdesign.io/",
     github: "",
     title: "Ambushdesign",
@@ -15,6 +32,7 @@ export const projectsInfo = [
     stack: ["React", "Typescript", "Nextjs", "AWS", "SCSS"],
     tag: "Long Lost Friends",
   },
+
   {
     website: "https://delincuenmapa.com",
     github: "",
