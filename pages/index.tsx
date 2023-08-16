@@ -13,6 +13,18 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const isMobile = () => {
+    if (typeof window === "undefined") return false; // Check if running on the server
+    return window.matchMedia("(max-width: 767px)").matches;
+  };
+
+  const isSafari = () => {
+    if (typeof window === "undefined") return false; // Check if running on the server
+    return (
+      isMobile() && /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+    );
+  };
+
   const ref = useRef(null);
   const { scrollY, scrollYProgress } = useScroll({
     target: ref,
@@ -47,23 +59,26 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <Birds />
           <div className={styles.videoContainer}>
-            <motion.video
-              style={{ scale: scale }}
-              muted
-              playsInline
-              autoPlay
-              preload="auto"
-              loop={true}
-              // controls={true}
-              className={styles.title}
-            >
-              <source src="/video2.mp4" type="video/mp4" />
-            </motion.video>
-            {/* <motion.img
-              style={{ scale: scale }}
-              src="/video2.gif"
-              className={styles.title}
-            /> */}
+            {isSafari() ? (
+              <motion.img
+                style={{ scale: scale }}
+                src="/video2.png"
+                className={styles.title}
+              />
+            ) : (
+              <motion.video
+                style={{ scale: scale }}
+                muted
+                playsInline
+                autoPlay
+                preload="auto"
+                loop={true}
+                // controls={true}
+                className={styles.title}
+              >
+                <source src="/video2.mp4" type="video/mp4" />
+              </motion.video>
+            )}
           </div>
           <img
             src="/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
