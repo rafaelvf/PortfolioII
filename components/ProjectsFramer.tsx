@@ -82,16 +82,22 @@ export default function ProjectsFramer() {
             </motion.div>
           </div>
           <div className={styles.projectImages}>
-            <motion.img
-              style={{ y: moco1a }}
-              src="/marriott1.webp"
-              className={`${styles.mockup} mockup1`}
-            />
-            <motion.img
-              style={{ x: moco1b }}
-              src="/marriott2.webp"
-              className={`${styles.mockup2} mockup11`}
-            />
+            <a
+              href="https://hazmeunaoferta.almacenesmarriott.com/"
+              target="_blank"
+              rel="noopener noreferrerz"
+            >
+              <motion.img
+                style={{ y: moco1a }}
+                src="/marriott1.webp"
+                className={`${styles.mockup} mockup1`}
+              />
+              <motion.img
+                style={{ x: moco1b }}
+                src="/marriott2.webp"
+                className={`${styles.mockup2} mockup11`}
+              />
+            </a>
           </div>
         </div>
 
@@ -133,16 +139,22 @@ export default function ProjectsFramer() {
             </motion.div>
           </div>
           <div className={styles.projectImages}>
-            <motion.img
-              style={{ y: moco2a }}
-              src="/cuqui3.png"
-              className={`${styles.mockup} mockup2`}
-            />
-            <motion.img
-              style={{ x: moco2b }}
-              src="/cuqui2.png"
-              className={`${styles.mockup2} mockup22`}
-            />
+            <a
+              href="https://cuquipay.com"
+              target="_blank"
+              rel="noopener noreferrerz"
+            >
+              <motion.img
+                style={{ y: moco2a }}
+                src="/cuqui3.png"
+                className={`${styles.mockup} mockup2`}
+              />
+              <motion.img
+                style={{ x: moco2b }}
+                src="/cuqui2.png"
+                className={`${styles.mockup2} mockup22`}
+              />
+            </a>
           </div>
         </div>
 
@@ -184,16 +196,22 @@ export default function ProjectsFramer() {
             </motion.div>
           </div>
           <div className={styles.projectImages}>
-            <motion.img
-              style={{ y: moco3a }}
-              src="/ambush2.png"
-              className={`${styles.mockup} mockup3`}
-            />
-            <motion.img
-              style={{ x: moco3b }}
-              src="/ambush1.png"
-              className={`${styles.mockup2} mockup33`}
-            />
+            <a
+              href="https://ambushdesign.io/"
+              target="_blank"
+              rel="noopener noreferrerz"
+            >
+              <motion.img
+                style={{ y: moco3a }}
+                src="/ambush2.png"
+                className={`${styles.mockup} mockup3`}
+              />
+              <motion.img
+                style={{ x: moco3b }}
+                src="/ambush1.png"
+                className={`${styles.mockup2} mockup33`}
+              />
+            </a>
           </div>
         </div>
       </div>

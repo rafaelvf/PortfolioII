@@ -6,7 +6,7 @@ import PDFViewer from "../components/PDFViewer";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
-  const pdfUrl = "/RafaelViteriCV.pdf";
+  const pdfUrl = "/CVRafael24.pdf";
   useEffect(() => {
     gsap.fromTo(
       ".title2",
@@ -61,7 +61,7 @@ export default function Contact() {
           </div>
         </a>
         <a
-          href="https://twitter.com/fixes_v"
+          href="https://twitter.com/fixes_dev"
           target="_blank"
           rel="noopener noreferrerz"
         >

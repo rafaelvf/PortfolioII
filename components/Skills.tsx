@@ -10,6 +10,7 @@ const tabs = [
       "/typescript-icon-svgrepo-com.svg",
       "/javascript-svgrepo-com.svg",
       "/c.png",
+      "/python.png",
       "/sql-svgrepo-com.svg",
       "/html-5-svgrepo-com.svg",
       "/css-3-svgrepo-com.svg",

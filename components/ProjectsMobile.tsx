@@ -77,11 +77,17 @@ export default function ProjectsMobile() {
             </motion.div>
           </div>
           <div className={styles.projectImages}>
-            <motion.img
-              style={{ y: moco1a }}
-              src="/marriott1.webp"
-              className={`${styles.mockup} mockup1`}
-            />
+            <a
+              href="https://hazmeunaoferta.almacenesmarriott.com/"
+              target="_blank"
+              rel="noopener noreferrerz"
+            >
+              <motion.img
+                style={{ y: moco1a }}
+                src="/marriott1.webp"
+                className={`${styles.mockup} mockup1`}
+              />
+            </a>
           </div>
         </div>
 
@@ -123,11 +129,17 @@ export default function ProjectsMobile() {
             </motion.div>
           </div>
           <div className={styles.projectImages}>
-            <motion.img
-              style={{ x: moco2b }}
-              src="/cuqui2.png"
-              className={`${styles.mockup2} mockup22`}
-            />
+            <a
+              href="https://cuquipay.com"
+              target="_blank"
+              rel="noopener noreferrerz"
+            >
+              <motion.img
+                style={{ x: moco2b }}
+                src="/cuqui2.png"
+                className={`${styles.mockup2} mockup22`}
+              />
+            </a>
           </div>
         </div>
 
@@ -170,11 +182,17 @@ export default function ProjectsMobile() {
             </motion.div>
           </div>
           <div className={styles.projectImages}>
-            <motion.img
-              style={{ x: moco3b }}
-              src="/ambush2.png"
-              className={`${styles.mockup22} mockup33`}
-            />
+            <a
+              href="https://ambushdesign.io/"
+              target="_blank"
+              rel="noopener noreferrerz"
+            >
+              <motion.img
+                style={{ x: moco3b }}
+                src="/ambush2.png"
+                className={`${styles.mockup22} mockup33`}
+              />
+            </a>
           </div>
         </div>
       </div>
