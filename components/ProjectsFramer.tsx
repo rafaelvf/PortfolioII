@@ -82,12 +82,12 @@ export default function ProjectsFramer() {
           <div className={styles.projectImages}>
             <motion.img
               style={{ y: moco1a }}
-              src="/ambush2.png"
+              src="/marriott1.webp"
               className={`${styles.mockup} mockup1`}
             />
             <motion.img
               style={{ x: moco1b }}
-              src="/ambush1.webp"
+              src="/marriott2.webp"
               className={`${styles.mockup2} mockup11`}
             />
           </div>
