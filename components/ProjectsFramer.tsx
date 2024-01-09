@@ -54,29 +54,31 @@ export default function ProjectsFramer() {
               className={`${styles.projectTitle} projectTitle`}
             >
               <a
-                href="https://ambushdesign.io/"
+                href="https://hazmeunaoferta.almacenesmarriott.com/"
                 target="_blank"
                 rel="noopener noreferrerz"
               >
-                Ambush design
+                Hazmeunaoferta
               </a>
             </motion.div>
             <motion.div
               style={{ opacity: opacity1c }}
               className={`${styles.projectPosition} projectPosition`}
             >
-              Front end @ LLF
+              Full stack developer
             </motion.div>
             <motion.div
               style={{ opacity: opacity1d }}
               className={`${styles.projectDescription} projectDescription`}
             >
-              Ambush is a Japanese fashion brand which is inspired in innovative
-              pop-art. They decided to enter web3 with this project launching
-              the POW! NFT collection. As a front end developer, I was part of
-              the team that built the project.
-              <br /> <div className={styles.space}></div>We used technologies
-              such as Nextjs, React, typescript, scss and GSAP.
+              HazmeUnaOferta is an e-commerce platform for AlmacenesMarriott, a
+              prominent retailer specializing in lighting and furniture. This
+              development introduces a unique twist where clients have the
+              opportunity to negotiate the prices of products.
+              <br /> <div className={styles.space}></div>The platform is built
+              using advanced technologies such as Next.js, React, TypeScript,
+              SCSS, Sanity, and integrates with the Paymetez payment processor,
+              as well as MongoDB for database management.
             </motion.div>
           </div>
           <div className={styles.projectImages}>
@@ -157,11 +159,11 @@ export default function ProjectsFramer() {
               className={`${styles.projectTitle} projectTitle3`}
             >
               <a
-                href="https://www.moodiesnft.io/"
+                href="https://ambushdesign.io/"
                 target="_blank"
                 rel="noopener noreferrerz"
               >
-                Moodies NFT
+                Ambush design
               </a>
             </motion.div>
             <motion.div
@@ -174,24 +176,23 @@ export default function ProjectsFramer() {
               style={{ opacity: opacity3d }}
               className={`${styles.projectDescription} projectDescription3`}
             >
-              MoodiesNFT is a web3 project that aims to bring emotional
-              intelligence to the world of non-fungible tokens (NFTs). With
-              MoodiesNFT, users can express their emotions through unique
-              digital assets that reflect their moods and personalities. <br />{" "}
-              The projject was built using the following technologies: React,
-              Typescript, Nextjs, AWS, GSAP, SCSS.
+              Ambush is a Japanese fashion brand which is inspired in innovative
+              pop-art. They decided to enter web3 with this project launching
+              the POW! NFT collection. As a front end developer, I was part of
+              the team that built the project. <br /> We used technologies such
+              as Nextjs, React, typescript, scss and GSAP.
             </motion.div>
           </div>
           <div className={styles.projectImages}>
             <motion.img
               style={{ y: moco3a }}
-              src="/moodies1.png"
+              src="/ambush2.png"
               className={`${styles.mockup} mockup3`}
             />
             <motion.img
               style={{ x: moco3b }}
-              src="/moodies2.png"
-              className={`${styles.mockup22} mockup33`}
+              src="/ambush1.png"
+              className={`${styles.mockup2} mockup33`}
             />
           </div>
         </div>
